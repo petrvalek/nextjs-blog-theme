@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import ArticlePreview from '../components/Layout';
+import ArticlePreview from '../components/templates/Post';
 
 const Admin = () => {
   useEffect(() => {
@@ -14,3 +14,5 @@ const Admin = () => {
 
   return <div />;
 };
+
+export default Admin;
