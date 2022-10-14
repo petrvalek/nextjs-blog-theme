@@ -17,3 +17,5 @@ const ArticlePreview = ({ entry }) => {
     </article>
   );
 };
+
+export default ArticlePreview;
