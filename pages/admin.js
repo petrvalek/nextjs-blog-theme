@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import ArticlePreview from '../components/templates/Post';
+import BlogPreview from '../components/templates/Post';
 
 const Admin = () => {
   useEffect(() => {
@@ -8,7 +8,7 @@ const Admin = () => {
       const CMS = (await import('netlify-cms-app')).default;
       CMS.init();
 
-      CMS.registerPreviewTemplate('article', ArticlePreview);
+      CMS.registerPreviewTemplate('blog', BlogPreview);
     })();
   }, []);
 
