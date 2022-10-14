@@ -8,7 +8,7 @@ const Admin = () => {
       const CMS = (await import('netlify-cms-app')).default;
       CMS.init();
 
-      // CMS.registerPreviewStyle();
+      CMS.registerPreviewStyle('/admin/main.css');
       CMS.registerPreviewTemplate('blog', BlogPreview);
     })();
   }, []);
